@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আইডি হস্তান্তর সংক্রান্ত অঙ্গীকারনামা</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Tiro+Bangla:ital@0;1&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e5e5e5;
+            font-family: 'Tiro Bangla', 'Hind Siliguri', serif;
+            color: #222;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dolil-container {
+            background-color: #fffaf0; /* Traditional off-white/cream paper tone */
+            width: 100%;
+            max-width: 850px;
+            min-height: 1100px;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 1px solid #d4c5af;
+            position: relative;
+            background-image: radial-gradient(#ece3d2 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* Bangladeshi Stamp Header Design */
+        .stamp-header {
+            border: 4px double #1b4d3e; /* Deep green traditional stamp color */
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            background-color: #f4f9f4;
+        }
+
+        .stamp-top-text {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1b4d3e;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .stamp-main-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #c92c2c; /* Red accent for the main emblem text */
+            margin-bottom: 10px;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        .stamp-value-box {
+            display: inline-block;
+            border: 2px solid #1b4d3e;
+            padding: 5px 25px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #1b4d3e;
+            background-color: #fff;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .stamp-serial {
+            font-size: 16px;
+            font-weight: bold;
+            color: #444;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-top: 10px;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        /* Document Body */
+        .dolil-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 30px;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        .dolil-meta {
+            text-align: right;
+            font-size: 16px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .dolil-section {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        .party-info {
+            background-color: rgba(27, 77, 62, 0.03);
+            border-left: 4px solid #1b4d3e;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .party-info h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #1b4d3e;
+            border-bottom: 1px dashed #1b4d3e;
+            padding-bottom: 5px;
+        }
+
+        .party-info ul {
+            list-style: none;
+        }
+
+        .party-info li {
+            margin-bottom: 6px;
+            display: flex;
+        }
+
+        .party-info li strong {
+            width: 180px;
+            display: inline-block;
+            color: #444;
+        }
+
+        .conditions-list {
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .conditions-list li {
+            margin-bottom: 12px;
+            line-height: 1.8;
+            font-size: 16px;
+            list-style-type: disc;
+            padding-left: 5px;
+        }
+
+        .closing-text {
+            font-weight: bold;
+            text-align: center;
+            margin: 40px 0;
+            font-size: 17px;
+            color: #333;
+        }
+
+        /* Signatures Layout */
+        .signature-section {
+            margin-top: 60px;
+            display: table;
+            width: 100%;
+        }
+
+        .signature-block {
+            display: table-cell;
+            width: 50%;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .signature-line {
+            width: 200px;
+            border-top: 1px dashed #222;
+            margin: 0 auto 10px auto;
+        }
+
+        .signature-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .signature-title {
+            font-size: 14px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .witness-section {
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .witness-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .witness-grid {
+            display: table;
+            width: 100%;
+        }
+
+        .witness-col {
+            display: table-cell;
+            width: 50%;
+            font-size: 15px;
+            color: #555;
+            line-height: 2;
+        }
+
+        /* Decorative Watermark */
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 90px;
+            font-weight: bold;
+            color: rgba(27, 77, 62, 0.03);
+            white-space: nowrap;
+            pointer-events: none;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dolil-container">
+        <!-- Watermark Behind Content -->
+        <div class="watermark">অঙ্গীকারনামা</div>
+
+        <!-- Bangladeshi Stamp Top Header -->
+        <div class="stamp-header">
+            <div class="stamp-top-text">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</div>
+            <div class="stamp-main-title">অ-জুডিশিয়াল স্ট্যাম্প</div>
+            <div class="stamp-value-box">১০০ টাকা</div>
+            <div class="stamp-serial">
+                <span>ক্রমিক নং: জ-৪০৪২২৭৫</span>
+                <span>তারিখ: ২৫/০৬/২০২৬ খ্রিঃ</span>
+            </div>
+        </div>
+
+        <!-- Main Title -->
+        <div class="dolil-title">ফ্রি ফায়ার আইডি হস্তান্তর সংক্রান্ত অঙ্গীকারনামা</div>
+
+        <!-- Date Section -->
+        <div class="dolil-meta">
+            তারিখ: ২৫ জুন, ২০২৬ ইং
+        </div>
+
+        <!-- Opening Text -->
+        <div class="dolil-section">
+            এই মর্মে অঙ্গীকার করা যাচ্ছে যে, আইডি হস্তান্তরকারী (প্রথম পক্ষ) এবং আইডি গ্রহণকারী (দ্বিতীয় পক্ষ) উভয় পক্ষ একে অপরের পারস্পরিক সম্মতিক্রমে ও স্বেচ্ছায় নিচে উল্লেখিত ফ্রি ফায়ার গেমিং আইডিটি স্থায়ীভাবে লেনদেন ও মালিকানা হস্তান্তর করছেন।
+        </div>
+
+        <!-- Parties Information -->
+        <div class="party-info">
+            <h3>১. আইডি দাতা (প্রথম পক্ষ):</h3>
+            <ul>
+                <li><strong>নাম:</strong> মোঃ মোহাইমিনুল ইসলাম জিম (জিম)</li>
+                <li><strong>ঠিকানা:</strong> রংপুর সদর, রংপুর, বাংলাদেশ।</li>
+            </ul>
+        </div>
+
+        <div class="party-info">
+            <h3>২. আইডি গ্রহণকারী (দ্বিতীয় পক্ষ):</h3>
+            <ul>
+                <li><strong>নাম:</strong> মোঃ সোহেল আরমান (সোহেল)</li>
+                <li><strong>ঠিকানা:</strong> বাংলাদেশ।</li>
+            </ul>
+        </div>
+
+        <div class="party-info">
+            <h3>৩. হস্তান্তরিত আইডির বিবরণ:</h3>
+            <ul>
+                <li><strong>গেমিং আইডি (UID):</strong> 4042275458</li>
+                <li><strong>গেমিং আইডি লেভেল:</strong> 63</li>
+            </ul>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="dolil-title" style="font-size: 18px; text-align: left; margin-top: 30px; margin-bottom: 15px; text-decoration: none; color: #1b4d3e;">লেনদেনের শর্তাবলী:</div>
+        
+        <ul class="conditions-list">
+            <li><strong>ক)</strong> আইডি দাতা (জিম) তার উপরে উল্লেখিত ফ্রি ফায়ার আইডিটি পূর্ণাঙ্গ ও স্থায়ীভাবে আজ থেকে দ্বিতীয় পক্ষ মোঃ সোহেল আরমান-এর কাছে হস্তান্তর করছেন।</li>
+            <li><strong>খ)</strong> উক্ত আইডি হস্তান্তরের বিনিময়ে দ্বিতীয় পক্ষ মোঃ সোহেল আরমান আইডি দাতার অন্য একটি নির্দিষ্ট আইডিতে সফলভাবে ১টি 'উইকলি মেম্বারশিপ' (Weekly Membership) প্রদান করবেন।</li>
+            <li><strong>গ)</strong> অদ্য (২৫/০৬/২০২৬) তারিখ হইতে এই হস্তান্তরিত আইডির ওপর প্রথম পক্ষ (আইডি দাতা)-এর আর কোনো প্রকার অধিকার, মালিকানা বা দাবি থাকবে না। একইভাবে দ্বিতীয় পক্ষ (আইডি গ্রহণকারী)-ও ভবিষ্যতে লেনদেন সংক্রান্ত বিষয়ে কোনো প্রকার নতুন দাবি বা অভিযোগ উথাপন করতে পারবেন না।</li>
+            <li><strong>ঘ)</strong> গেমের নিজস্ব পলিসি, সার্ভার ইস্যু, থার্ড পার্টি কোনো সমস্যা বা অন্য কোনো কারণে ভবিষ্যতে আইডি ব্যান হলে কিংবা কোনো প্রকার ত্রুটি দেখা দিলে, তার যাবতীয় দায়ভার সম্পূর্ণ আইডি প্রদানকারীর ওপর বর্তাবে।</li>
+        </ul>
+
+        <!-- Closing Text -->
+        <div class="closing-text">
+            উভয় পক্ষ এই দলিলের সমস্ত শর্তাবলী নিজ নিজ দায়িত্বে, সজ্ঞানে, সচেতনভাবে এবং সম্পূর্ণ স্বেচ্ছায় মেনে নিয়ে এই লেনদেনে চূড়ান্তভাবে সম্মত হয়েছেন।
+        </div>
+
+        <!-- Signatures Layout -->
+        <div class="signature-section">
+            <div class="signature-block">
+                <div style="font-family: 'Courier New', monospace; font-size: 18px; font-style: italic; font-weight: bold; color: #1b4d3e; margin-bottom: 5px;">M.I Zim</div>
+                <div class="signature-line"></div>
+                <div class="signature-name">মোঃ মোহাইমিনুল ইসলাম জিম</div>
+                <div class="signature-title">হস্তান্তরকারী (প্রথম পক্ষ)</div>
+            </div>
+            
+            <div class="signature-block">
+                <div style="font-family: 'Courier New', monospace; font-size: 18px; font-style: italic; font-weight: bold; color: #c92c2c; margin-bottom: 5px;">SOHEL</div>
+                <div class="signature-line"></div>
+                <div class="signature-name">মোঃ সোহেল আরমান</div>
+                <div class="signature-title">আইডি গ্রহণকারী (দ্বিতীয় পক্ষ)</div>
+            </div>
+        </div>
+
+        <!-- Witness Section -->
+        <div class="witness-section">
+            <div class="witness-title">সাক্ষীগণের নাম ও স্বাক্ষর:</div>
+            <div class="witness-grid">
+                <div class="witness-col">
+                    ১. M.I. Zim<br>
+                    ২. <div style="font-family: 'Courier New', monospace; font-size: 18px; font-style: italic; font-weight: bold; color: #c92c2c; margin-bottom: 5px;"><em>SOHEL</em></div>
+                </div>
+                <div class="witness-col" style="text-align: right; padding-right: 40px; vertical-align: bottom;">
+                    <span style="font-size: 12px; color: #888;">[নন-জুডিশিয়াল চুক্তিপত্র]</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
